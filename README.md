@@ -1,4 +1,4 @@
-#Multiple searches
+# Multiple searches
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 >This will be a basic program that will search multiple things at once
