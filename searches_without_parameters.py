@@ -6,9 +6,9 @@ import webbrowser
 # --- | (1) Simple command program for multiple searches (without program paramaters)| ---
 
 # Variables
-static_before_word = 'Red'
-static_after_word  = ''
-list_of_words = ['Couch','dog', 'cat']
+static_before_word = 'Big'
+static_after_word  = 'doggo'
+list_of_words = ['brown','red', 'fat']
                           #Google DuckDuckGo Bing
 list_of_enabled_browsers = [True,   False   ,False ]
 # This will not be implemented in command program

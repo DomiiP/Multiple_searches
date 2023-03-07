@@ -3,35 +3,58 @@ import sys
 
 # --- | (1) Simple command program for multiple searches (with parameters)| ---
 
-if __name__ == "__main__":
-    # Words
-    try:
-        words  = sys.argv[1]
-    except Exception as e:
-        print(e)
-    try:
-        before = sys.argv[2]
-    except Exception as e:
-        print(e)
-    try:
-        after  = sys.argv[3]
-    except Exception as e:
-        print(e)
-    print(f'This is a test print of words: {words}, and also of before: {before} and of after: {after}')
-    
+# Example of using
+# >python searches.py cat dog parrot
+# Upper line will search for results of 'cat' and 'dog' and 'parrot'
+# >python searches.py cat dog + big
+# Upper line will search for results of 'big cat' and 'big dog'
+# >python searches.py cat dog + big + red
+# Upper line will search for results 'big cat red' and 'big dog red'
+
+
 # For easier implementation I will just use Google
 browser = 'google'
 # This will not be implemented in command program
 specified_browser = 'chrome'
+# All words
+words     = sys.argv
+#print(words)
+arguments = ""
+before    = ""
+after     = ""
+# Delete first item in list
+words.pop(0)
+#print(words)
+# Combine into words
+#words = words.split()
+# Now we will seperate words looking for '+'
+start = 0
+counter = 0
+i = 0
+while i < len(words):
+    #print(words[i])
+    if words[i] == '+':
+        start += 1
+    if start == 0:
+        arguments += ' ' + words[i]
+        counter += 1
+    if start == 1:
+        before += ' ' + words[i]
+    if start == 2:
+        after += ' ' + words[i]
+    if start == 3:
+        break
+    i += 1
+    #print(i)
 
-# Logic behind it
-for word in words:
-    # Google
-    if(list_of_enabled_browsers[0]):
-        webbrowser.open(f"https://google.com/search?q={static_before_word}+{word}+{static_after_word}")
-    # DuckDuckGo
-    if(list_of_enabled_browsers[1]):
-        webbrowser.open(f"https://duckduckgo.com/?q={static_before_word}+{word}+{static_after_word}")
-    # Bing
-    if(list_of_enabled_browsers[2]):
-        webbrowser.open(f"https://bing.com/search?q=={static_before_word}+{word}+{static_after_word}")
+if before != '':
+    before = before[1:]
+if after != '':
+    after = after[3:]
+    print(after)
+
+# Words before and after will be seperated with '+'
+i = 0
+while i < counter:
+    webbrowser.open(f"https://google.com/search?q={before}+{words[i]}+{after}")
+    i += 1
