@@ -16,3 +16,6 @@ Changelog:
     * Created a simple command program for multiple searches (with program parameters)
 - 8.3.2023
     * Created a simple GUI layout using _tkinter_
+- 9.3.2023
+    * GUI has now the same logic as simple command program
+    * Also fixed a buy when searching with Bing

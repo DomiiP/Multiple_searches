@@ -24,4 +24,4 @@ for word in list_of_words:
         webbrowser.open(f"https://duckduckgo.com/?q={static_before_word}+{word}+{static_after_word}")
     # Bing
     if(list_of_enabled_browsers[2]):
-        webbrowser.open(f"https://bing.com/search?q=={static_before_word}+{word}+{static_after_word}")
+        webbrowser.open(f"https://bing.com/search?q={static_before_word}+{word}+{static_after_word}")
