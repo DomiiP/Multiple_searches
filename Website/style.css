@@ -2,26 +2,82 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h2,h4,hr{
+h2,h5,hr{
     margin: 0 auto;
     padding: 0 auto;
 }
 
-/* input[type="text"]{
-    width: max-content;
-} */
+input[type="text"]{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+button{
+    background-color: rgb(10, 0, 96);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 2px 5px 2px 5px;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    border: none;
+}
 
 .container{
-    border: solid red 1px;
+    border: solid gray 1px;
     text-align: center;
     width: 450px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 31);
+    position: relative;
 }
 
 .container-header{
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(10, 0, 96);
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
+
+.settings, .github{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top: 6px;
+    /* mix-blend-mode: difference;
+    color:white; */
+    filter: invert(100%);
+}
+
+.settings{
+    left: 10px;
+}
+.github{
+    right: 11px;
+}
+
+.words, .postfix-and-prefix{
+    display:grid;
+    grid-template-rows: auto;
+}
+
+.words{
+    padding: 0 10px 0 10px;
+}
+
 .postfix-and-prefix{
-    display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
+}
+.checkboxContainer{
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:rgb(10, 0, 96);
+    margin-top: 10px;
+}
+.checkboxOne, .checkboxTwo, .checkboxThree{
+    display:grid;
 }
