@@ -16,30 +16,31 @@
         </div>
         <div class="words">
             <div>Type words you want to search</div>
-            <input type="text" >
+            <input type="text" id = "words_input">
         </div>
         <div class="postfix-and-prefix">
             <label>Before</label>
             <label>After</label>
-            <input type="text">
-            <input type="text">
+            <input type="text" id ="before_input">
+            <input type="text" id ="after_input">
         </div>
-        <button>Search</button>
+        <button onclick="search(-1)">Search</button>
         <div class="checkboxContainer">
             <div class="checkboxOne">
                 <label for="google">Google</label>
-                <input type="checkbox" value="google" checked>
+                <input type="checkbox" class="google_checkbox" checked>
             </div>
             <div class="checkboxTwo">
                 <label for="duckDuckGo">DuckDuckGo</label>
-                <input type="checkbox" value="duckDuckGo">
+                <input type="checkbox" class="duckduckgo_checkbox">
             </div>
             <div class="checkboxThree">
                 <label for="bing">Bing</label>
-                <input type="checkbox" value="bing">
+                <input type="checkbox" class="bing_checkbox">
             </div>
         </div>
     </div>
 
 </body>
+<script type = "text/javascript" src = "script.js"></script>
 </html>
