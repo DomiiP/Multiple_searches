@@ -6,8 +6,11 @@
 My TODO steps:
 1. Simple command program for multiple searches - [x]
 2. Simple GUI program for multiple searches & some additional features - [ ]
-3. Implemented everything onto a website - [ ]
+3. Implemented everything onto a website (Chrome extension) - [ ]
 4. More features ?
+
+How you can help:
+* Progress bar has to be implemented to GUI version
 
 Changelog:
 - 7.3.2023
@@ -19,3 +22,5 @@ Changelog:
 - 9.3.2023
     * GUI has now the same logic as simple command program
     * Also fixed a buy when searching with Bing
+-10.3.2023
+    * Created a simple Website layout
