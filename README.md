@@ -23,7 +23,7 @@
 - 9.3.2023
     * GUI has now the same logic as simple command program
     * Also fixed a buy when searching with Bing
--10.3.2023
+- 10.3.2023
     * Created a simple Website layout
     * Website has now styling and a same logic as command program / GUI
     * Added an extra feature where you can combine words using '+'
