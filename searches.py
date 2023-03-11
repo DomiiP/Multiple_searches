@@ -53,6 +53,12 @@ if after != '':
     after = after[3:]
     print(after)
 
+# Combine words
+def combineWords(words):
+    for word in words:
+        if '+' in word:
+            word = word.replace('+', ' ')
+combineWords(words)
 # Words before and after will be seperated with '+'
 i = 0
 while i < counter:

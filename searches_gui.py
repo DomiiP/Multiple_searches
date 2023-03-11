@@ -40,6 +40,7 @@ after.grid(row = 3, column = 3, columnspan=3)
 # Function for button
 def executeClick():
     list_of_words = words.get().split()
+    combineWords(list_of_words)
     for word in list_of_words:
          # Google
         if(check_val[0].get()):
@@ -81,13 +82,18 @@ label_checkbox_bing.grid      (row = 6, column = 4, columnspan=2)
 checkbox_google     = tk.Checkbutton(window, variable=check_val[0])
 checkbox_google.select()
 checkbox_duckduckgo = tk.Checkbutton(window, variable=check_val[1])
-checkbox_bing       = tk.Checkbutton(window, variable=check_val[2]);
+checkbox_bing       = tk.Checkbutton(window, variable=check_val[2])
 checkbox_google.grid    (row = 7, column = 0, columnspan=2)
 checkbox_duckduckgo.grid(row = 7, column = 2, columnspan=2)
 checkbox_bing.grid      (row = 7, column = 4, columnspan=2)
 
-# Progress value
+# Combine words
+def combineWords(words):
+    for word in words:
+        if '+' in word:
+            word = word.replace('+', ' ')
 
+# Progress value
 def progressBarValue():
     print('TODO')
 

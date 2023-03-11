@@ -1,6 +1,14 @@
 // Have to copy python logic to js
 // Because for loop didn't work with window.open, 
 // I made this questionable recursion method
+
+// document.getElementById("search").addEventListener("onclick", search(-1,"","","","","",""));
+
+var a = document.getElementById("search");
+
+a.addEventListener('click',function(){
+    search(-1);
+});
 function search(number, before_i, after_i, words_i, google, duckduckgo, bing){
     // These variables will be only inicilized / given value one time
     var before,after,words, google, duckduckgo, bing;

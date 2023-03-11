@@ -15,6 +15,14 @@ list_of_enabled_browsers = [True,   False   ,False ]
 specified_browser = 'chrome'
 
 # Logic behind it
+
+# Combine words
+def combineWords(words):
+    for word in words:
+        if '+' in word:
+            word = word.replace('+', ' ')
+
+combineWords(list_of_words)
 for word in list_of_words:
     # Google
     if(list_of_enabled_browsers[0]):
