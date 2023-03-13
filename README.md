@@ -19,9 +19,12 @@ More Tools > Extensions > Enable developer mode > Load unpacked > Select _Websit
 ###  How you can help:
 * Progress bar implementation to GUI version
 * Recursive function on the website can be altered
-* _window.open_ function doesn't open multiple tabs commonly
 
 ##### Changelog:
+- 13.3.2023
+    * Changed _github_ redirection to the project
+    * Added _tabs permissions_ to _manifest.json_ file
+    * Fixed a bug where only first search was opened
 - 12.3.2023
     * Changed _README_ file
 - 11.3.2023 - Version 1.0.0. is out!

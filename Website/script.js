@@ -50,12 +50,11 @@ function search(number, before_i, after_i, words_i, google, duckduckgo, bing){
 
         if(bing == 'on'){
         window.open(
-            "https://bing.com/search?q=" + before + "+" + words[words.length - number] + "+" + after);
+            "https://bing.com/search?q=" + before + "+" + words[words.length - number] + "+" + after);}
         // For recursion to go closer to zero
         number -= 1;
         // Recursion call
         search(number, before, after, words, google, duckduckgo, bing);
-        }
     }
 }
 // Function first checks if given words list include '+' and then replaces it with a space
