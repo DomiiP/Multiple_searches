@@ -1,12 +1,11 @@
 {
     "name": "Multiple searches",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "Search on google,duckduckgo and bing at the same time and multiple times.",
     "manifest_version": 3,
     "author": "Domen Pahole",
     "action":{
         "default_popup": "index.html",
         "default_title": "Multiple searches"
-    },
-    "permissions":"tabs"
+    }
 }

@@ -14,12 +14,19 @@ input[type="text"]{
 }
 
 button{
-    background-color: rgb(10, 0, 96);
     color: white;
     border-radius: 8px;
     border: 2px solid black;
     padding: 2px 5px 2px 5px;
     cursor: pointer;
+}
+
+#search{
+    background-color: rgb(10, 0, 96);
+}
+
+#clear{
+    background-color: rgb(96, 0, 0);
 }
 
 hr{

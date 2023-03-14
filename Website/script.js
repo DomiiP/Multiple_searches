@@ -63,3 +63,17 @@ function combineWords(words){
         if (words[i].includes('+')) words[i] = words[i].replace("+", " ");
     }
 }
+
+// Clear currently written text
+
+var b = document.getElementById("clear");
+
+b.addEventListener('click',function(){
+    clearContext();
+});
+
+function clearContext(){
+    document.getElementById("before_input").value = "";
+    document.getElementById("after_input").value = "";
+    document.getElementById("words_input").value = "";
+}

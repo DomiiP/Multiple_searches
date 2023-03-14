@@ -21,6 +21,8 @@ More Tools > Extensions > Enable developer mode > Load unpacked > Select _Websit
 * Recursive function on the website can be altered
 
 ##### Changelog:
+- 14.3.2023
+    * Added _clear_ button for clearing currently written text
 - 13.3.2023
     * Changed _github_ redirection to the project
     * Added _tabs permissions_ to _manifest.json_ file
